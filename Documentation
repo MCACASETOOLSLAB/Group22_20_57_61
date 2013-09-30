@@ -1,0 +1,19 @@
+DINING PHILOSHOPHERS SOLUTION
+-----------------------------
+Please visit "FINAL SOLUTION/index.html" for take a look what we had done.
+
+We have included two different solutions for Dining Philoshopher problem.
+ 
+1. RESOURCE HIERARCHY SOLUTION : 
+It assigns a partial order to the resources (the forks, in this case), and establishing the convention that all resources will be requested in order, and that no two resources unrelated by order will ever be used by a single unit of work at the same time. Here, the resources (forks) will be numbered 1 through 5 and each unit of work (philosopher) will always pick up the lower-numbered fork first, and then the higher-numbered fork, from among the two forks he plans to use. The order that each philosopher puts down the fork does not matter. In this case, if four of the five philosophers simultaneously pick up their lower-numbered fork, only the highest numbered fork will remain on the table, so the fifth philosopher will not be able to pick up any fork. Moreover, only one philosopher will have access to that highest-numbered fork, so he will be able to eat using two forks.
+
+
+2. CONDUCTOR SOLUTION : 
+Another relatively simple solution is achieved by introducing a waiter at the table. Philosophers must ask his permission before taking up any forks. Because the waiter is aware of how many forks are in use, he is able to arbitrate and prevent deadlock. When four of the forks are in use, the next philosopher to request one has to wait for the waiter's permission, which is not given until a fork has been released. The logic is kept simple by specifying that philosophers always seek to pick up their left hand fork before their right hand fork (or vice versa). The waiter acts as a semaphore.
+
+Note : Other folders does not contain the finalized version of our solution, these were the folders on which we had worked seperately i.e. different modules.
+
+Finalized Version : "FINAL SOLUTION/index.html"
+
+Thank you,
+Group no 22.
